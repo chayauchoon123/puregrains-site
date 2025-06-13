@@ -14,22 +14,17 @@
       color: #40210f;
     }
     header {
-      background: rgba(255, 245, 238, 0.9);
+      background: rgba(255, 245, 238, 0.92);
       text-align: center;
-      padding: 0;
+      padding: 30px 20px 10px;
     }
     header img.logo {
-      height: 120px;
-      margin: 20px 0 10px;
-    }
-    .banner {
-      width: 100%;
-      height: auto;
-      display: block;
+      height: 160px;
+      margin-bottom: 10px;
     }
     header h1 {
       margin: 10px 0 5px;
-      font-size: 28px;
+      font-size: 36px;
       color: #cc4f2d;
     }
     header p {
@@ -37,7 +32,7 @@
       color: #7a4e3a;
     }
     nav {
-      background: rgba(255, 245, 238, 0.9);
+      background: rgba(255, 245, 238, 0.95);
       padding: 10px;
       text-align: center;
       border-bottom: 1px solid #e4d4c8;
@@ -110,6 +105,11 @@
       margin: 0 8px;
       text-decoration: none;
       color: #cc4f2d;
+    }
+    @media (max-width: 768px) {
+      header img.logo {
+        height: 100px;
+      }
     }
   </style>
 </head>
