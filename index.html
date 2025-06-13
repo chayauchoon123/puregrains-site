@@ -16,11 +16,17 @@
     }
     header {
       background: rgba(255, 245, 238, 0.9);
-      padding: 40px 20px 20px;
       text-align: center;
+      padding: 0;
     }
-    header img {
+    header img.logo {
       height: 80px;
+      margin: 20px 0 10px;
+    }
+    .banner {
+      width: 100%;
+      height: auto;
+      display: block;
     }
     header h1 {
       margin: 10px 0 5px;
@@ -70,6 +76,13 @@
     .product p {
       margin-top: 10px;
     }
+    .product a {
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 5px;
+      color: #cc4f2d;
+      font-weight: bold;
+    }
     form input, form textarea {
       width: 100%;
       margin-bottom: 15px;
@@ -103,7 +116,8 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="PureGrains Logo">
+    <img src="logo.png" class="logo" alt="PureGrains Logo">
+    <img src="banner.jpg" alt="PureGrains Banner" class="banner">
     <h1>PureGrains</h1>
     <p>健康不一定是痛苦，美味谷粮让健康生活变简单。</p>
   </header>
@@ -126,18 +140,22 @@
       <div class="product">
         <img src="product1.jpg" alt="产品图1">
         <p>经典原味（适合全家人）</p>
+        <a href="product1.html">了解更多</a>
       </div>
       <div class="product">
         <img src="product2.jpg" alt="产品图2">
         <p>排便加强版（添加益生元，调节肠道）</p>
+        <a href="product2.html">了解更多</a>
       </div>
       <div class="product">
         <img src="product3.jpg" alt="产品图3">
         <p>三高调理版（调节血压血糖）</p>
+        <a href="product3.html">了解更多</a>
       </div>
       <div class="product">
         <img src="product4.jpg" alt="产品图4">
         <p>适合代餐的美味营养组合</p>
+        <a href="product4.html">了解更多</a>
       </div>
     </div>
   </section>
