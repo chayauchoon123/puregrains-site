@@ -1,186 +1,208 @@
+<!-- product1.html -->
 <!DOCTYPE html>
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PureGrains — 健康不一定是痛苦，谷物饮品也可以好喝！">
-  <title>PureGrains | 健康与美味共存</title>
+  <title>PureGrains 经典原味</title>
   <style>
     body {
-      font-family: "Helvetica Neue", sans-serif;
+      font-family: Helvetica, sans-serif;
       margin: 0;
-      background: url('puregrains-background.jpg') no-repeat center center fixed;
-      background-size: cover;
+      padding: 20px;
+      background-color: #fff8ee;
       color: #40210f;
     }
-    header {
-      background: rgba(255, 245, 238, 0.92);
-      text-align: center;
-      padding: 30px 20px 10px;
-    }
-    header img.logo {
-      height: 240px;
-      max-width: 100%;
-      margin-bottom: 10px;
-    }
-    header h1 {
-      margin: 10px 0 5px;
-      font-size: 36px;
-      color: #cc4f2d;
-    }
-    header p {
-      font-size: 16px;
-      color: #7a4e3a;
-    }
-    nav {
-      background: rgba(255, 245, 238, 0.95);
-      padding: 10px;
-      text-align: center;
-      border-bottom: 1px solid #e4d4c8;
-    }
-    nav a {
-      margin: 0 20px;
-      text-decoration: none;
-      color: #a64727;
-      font-weight: bold;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 960px;
+    .container {
+      max-width: 800px;
       margin: auto;
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 12px;
-      margin-bottom: 30px;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1s ease-out forwards;
     }
-    h2 {
-      color: #c2653e;
-      margin-bottom: 20px;
-    }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .product {
-      width: calc(50% - 10px);
-    }
-    .product img {
+    img {
       width: 100%;
       border-radius: 12px;
+      animation: fadeIn 1.2s ease-in forwards;
     }
-    .product p {
-      margin-top: 10px;
+    h1 {
+      color: #cc4f2d;
+      animation: fadeInUp 1s ease-out forwards;
     }
-    .product a {
-      text-decoration: none;
+    a {
       display: inline-block;
-      margin-top: 5px;
+      margin-top: 20px;
+      text-decoration: none;
       color: #cc4f2d;
       font-weight: bold;
     }
-    form input, form textarea {
-      width: 100%;
-      margin-bottom: 15px;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    form button {
-      background: #cc4f2d;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    footer {
-      background: rgba(255, 245, 238, 0.9);
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-    .social {
-      margin-top: 10px;
-    }
-    .social a {
-      margin: 0 8px;
-      text-decoration: none;
-      color: #cc4f2d;
-    }
-    @media (max-width: 768px) {
-      header img.logo {
-        height: 100px;
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" class="logo" alt="PureGrains Logo">
-    <h1>PureGrains</h1>
-    <p>健康不一定是痛苦，美味谷粮让健康生活变简单。</p>
-  </header>
+  <div class="container">
+    <h1>经典原味</h1>
+    <img src="product1.jpg" alt="经典原味">
+    <p>适合全家人饮用，口味温和，富含 18 种谷物营养，帮助维持肠道健康与日常营养摄取。</p>
+    <ul>
+      <li>高膳食纤维</li>
+      <li>无添加糖</li>
+      <li>营养均衡，适合日常代餐</li>
+    </ul>
+    <a href="index.html">← 返回首页</a>
+  </div>
+</body>
+</html>
 
-  <nav>
-    <a href="#about">品牌介绍</a>
-    <a href="#products">产品展示</a>
-    <a href="#faq">常见问题</a>
-    <a href="#contact">联系我们</a>
-  </nav>
 
-  <section id="about">
-    <h2>品牌介绍</h2>
-    <p>PureGrains 是一款融合18种天然谷物的饮品，富含菊粉、DHA、甜叶菊和丰富矿物质。我们致力于让健康饮食生活化，好喝、营养又轻松。</p>
-  </section>
+<!-- product2.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PureGrains 排便加强版</title>
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #fff2e6;
+      color: #40210f;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      animation: fadeIn 1.2s ease-in forwards;
+    }
+    h1 {
+      color: #e85c2f;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #e85c2f;
+      font-weight: bold;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>排便加强版</h1>
+    <img src="product2.jpg" alt="排便加强版">
+    <p>专为排便不顺、肠道敏感人群设计，添加益生元（菊粉），促进肠道蠕动与好菌繁殖。</p>
+    <ul>
+      <li>含更多益生元</li>
+      <li>有效缓解便秘</li>
+      <li>改善肠道菌相</li>
+    </ul>
+    <a href="index.html">← 返回首页</a>
+  </div>
+</body>
+</html>
 
-  <section id="products">
-    <h2>产品展示</h2>
-    <div class="products">
-      <div class="product">
-        <img src="product1.jpg" alt="产品图1">
-        <p>经典原味（适合全家人）</p>
-        <a href="product1.html">了解更多</a>
-      </div>
-      <div class="product">
-        <img src="product2.jpg" alt="产品图2">
-        <p>排便加强版（添加益生元，调节肠道）</p>
-        <a href="product2.html">了解更多</a>
-      </div>
-      <div class="product">
-        <img src="product3.jpg" alt="产品图3">
-        <p>三高调理版（调节血压血糖）</p>
-        <a href="product3.html">了解更多</a>
-      </div>
-      <div class="product">
-        <img src="product4.jpg" alt="产品图4">
-        <p>适合代餐的美味营养组合</p>
-        <a href="product4.html">了解更多</a>
-      </div>
-    </div>
-  </section>
 
-  <section id="faq">
-    <h2>常见问题</h2>
-    <p><strong>Q: 适合什么人群？</strong><br>A: 适合成人、小孩、老人，特别是注重肠道健康的人。</p>
-    <p><strong>Q: 是否含糖？</strong><br>A: 使用甜叶菊代替蔗糖，糖尿病患者也能饮用。</p>
-  </section>
-
-  <section id="contact">
-    <h2>联系我们</h2>
-    <form>
-      <input type="text" placeholder="你的名字">
-      <input type="email" placeholder="你的邮箱">
-      <textarea rows="5" placeholder="你的留言"></textarea>
-      <button type="submit">发送</button>
-    </form>
-    <div class="social">
-      <a href="https://www.facebook.com/PureGrainsOfficial" target="_blank">Facebook</a>
-      <a href="https://wa.me/60123456789" target="_blank">WhatsApp</a>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 PureLife Solution Sdn Bhd. All rights reserved.
-  </footer>
+<!-- product3.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PureGrains 三高调理版</title>
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #e6f7f5;
+      color: #1e4d4d;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      animation: fadeIn 1.2s ease-in forwards;
+    }
+    h1 {
+      color: #267c7c;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #267c7c;
+      font-weight: bold;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>三高调理版</h1>
+    <img src="product3.jpg" alt="三高调理版">
+    <p>特别适合血糖、血压、血脂偏高者，采用低升糖原料并添加植物固醇，有助于健康调理。</p>
+    <ul>
+      <li>低 GI 谷物</li>
+      <li>高钾、低钠配方</li>
+      <li>适合糖尿病、高血压人群</li>
+    </ul>
+    <a href="index.html">← 返回首页</a>
+  </div>
 </body>
 </html>
