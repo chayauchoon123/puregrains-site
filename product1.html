@@ -16,13 +16,18 @@
     .container {
       max-width: 800px;
       margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1s ease-out forwards;
     }
     img {
       width: 100%;
       border-radius: 12px;
+      animation: fadeIn 1.2s ease-in forwards;
     }
     h1 {
       color: #cc4f2d;
+      animation: fadeInUp 1s ease-out forwards;
     }
     a {
       display: inline-block;
@@ -30,6 +35,20 @@
       text-decoration: none;
       color: #cc4f2d;
       font-weight: bold;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
