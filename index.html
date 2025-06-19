@@ -17,7 +17,6 @@
       color: #40210f;
     }
 
-    /* 全局清除背景框 */
     * {
       background-color: transparent !important;
       box-shadow: none !important;
@@ -68,26 +67,43 @@
     .products {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       justify-content: center;
+      gap: 30px;
     }
 
-    .product {
-      flex: 1 1 280px;
+    .product-card {
+      width: 280px;
       text-align: center;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .product img {
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .product-card img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 12px;
+      margin-bottom: 10px;
     }
 
-    .product a {
+    .button {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 8px;
+      padding: 8px 16px;
+      background-color: #e85c2f;
+      color: white;
       text-decoration: none;
-      color: #e85c2f;
-      font-weight: bold;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #b93f1a;
     }
   </style>
 </head>
@@ -114,20 +130,20 @@
     <div class="section" id="products">
       <h2>产品展示</h2>
       <div class="products">
-        <div class="product">
+        <div class="product-card">
           <img src="product1.jpg" alt="经典原味" />
           <p>经典原味（适合全家人）</p>
-          <a href="product1.html">了解更多</a>
+          <a href="product1.html" class="button">了解更多</a>
         </div>
-        <div class="product">
+        <div class="product-card">
           <img src="product2.jpg" alt="排便加强版" />
           <p>排便加强版（添加益生元，调节肠道）</p>
-          <a href="product2.html">了解更多</a>
+          <a href="product2.html" class="button">了解更多</a>
         </div>
-        <div class="product">
+        <div class="product-card">
           <img src="product3.jpg" alt="三高调理版" />
           <p>三高调理版（调节血压血糖）</p>
-          <a href="product3.html">了解更多</a>
+          <a href="product3.html" class="button">了解更多</a>
         </div>
       </div>
     </div>
