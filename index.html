@@ -1,168 +1,153 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-Hans">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PureGrains 官网</title>
+  <title>PureGrains by PureLife</title>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: Helvetica, sans-serif;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    body {
       background-image: url('puregrains-background.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      background-position: center;
-      color: #40210f;
     }
-
-    * {
-      background-color: transparent !important;
-      box-shadow: none !important;
+    header {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
-
-    section, .container, .product, .section, .products, .product img, .product a {
-      background-color: transparent !important;
-      box-shadow: none !important;
-      border-radius: 0 !important;
-      padding: 0 !important;
+    header img {
+      height: 50px;
     }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #cc4f2d;
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    p.subtitle {
-      text-align: center;
-      margin-top: 0;
-      font-size: 16px;
-    }
-
-    nav {
-      text-align: center;
-      margin: 20px 0;
-    }
-
     nav a {
+      margin: 0 10px;
       text-decoration: none;
-      color: #cc4f2d;
-      margin: 0 15px;
+      color: #6b2400;
       font-weight: bold;
     }
-
-    .section {
-      margin-bottom: 60px;
+    .hero {
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('hero.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      font-size: 40px;
+      text-align: center;
     }
-
+    section {
+      padding: 50px 30px;
+      background-color: rgba(255, 255, 255, 0.6);
+      margin: 30px;
+      border-radius: 15px;
+    }
     .products {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 30px;
     }
-
-    .product-card {
-      width: 280px;
+    .product {
+      width: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
-      background: rgba(255,255,255,0.05);
-      border-radius: 12px;
-      padding: 15px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    }
-
-    .product-card img {
+    .product img {
       width: 100%;
-      border-radius: 12px;
-      margin-bottom: 10px;
     }
-
-    .button {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 8px 16px;
-      background-color: #e85c2f;
+    .product h3 {
+      padding: 10px 0;
+      color: #8b3c00;
+    }
+    .product a {
+      display: block;
+      padding: 10px;
+      background: #ff5a00;
       color: white;
       text-decoration: none;
-      border-radius: 20px;
-      transition: background-color 0.3s ease;
+      border-radius: 0 0 10px 10px;
     }
-
-    .button:hover {
-      background-color: #b93f1a;
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png" alt="PureGrains Logo" style="height: 60px; display:block; margin: 0 auto 10px;" />
-    <h1>PureGrains</h1>
-    <p class="subtitle">健康不一定是痛苦，美味谷粮让健康生活变简单。</p>
-
+  <header>
+    <img src="logo.png" alt="PureGrains Logo">
     <nav>
-      <a href="#brand">品牌介绍</a>
+      <a href="#about">品牌介绍</a>
       <a href="#products">产品展示</a>
       <a href="#faq">常见问题</a>
       <a href="#contact">联系我们</a>
     </nav>
+  </header>
 
-    <div class="section" id="brand">
-      <h2>品牌介绍</h2>
-      <p>
-        PureGrains 是一款融合18种天然谷物的饮品，富含菊粉、DHA、甜叶菊和丰富矿物质。我们致力于让健康饮食生活化、好喝、营养又轻松。
-      </p>
-    </div>
+  <div class="hero">
+    健康不一定是痛苦，美味谷粮让健康生活变简单。
+  </div>
 
-    <div class="section" id="products">
-      <h2>产品展示</h2>
-      <div class="products">
-        <div class="product-card">
-          <img src="product1.jpg" alt="经典原味" />
-          <p>经典原味（适合全家人）</p>
-          <a href="product1.html" class="button">了解更多</a>
-        </div>
-        <div class="product-card">
-          <img src="product2.jpg" alt="排便加强版" />
-          <p>排便加强版（添加益生元，调节肠道）</p>
-          <a href="product2.html" class="button">了解更多</a>
-        </div>
-        <div class="product-card">
-          <img src="product3.jpg" alt="三高调理版" />
-          <p>三高调理版（调节血压血糖）</p>
-          <a href="product3.html" class="button">了解更多</a>
-        </div>
+  <section id="about">
+    <h2>品牌介绍</h2>
+    <p>PureGrains 是一款融合18种天然谷物的饮品，富含菊粉、DHA、甜叶菊和丰富矿物质。我们致力于让健康饮食生活化、好喝、营养又轻松。</p>
+  </section>
+
+  <section id="products">
+    <h2>产品展示</h2>
+    <div class="products">
+      <div class="product">
+        <img src="product1.jpg" alt="经典原味">
+        <h3>经典原味（适合全家人）</h3>
+        <a href="product1.html">了解更多</a>
+      </div>
+      <div class="product">
+        <img src="product2.jpg" alt="排便加强版">
+        <h3>排便加强版（添加益生元、调节肠道）</h3>
+        <a href="product2.html">了解更多</a>
+      </div>
+      <div class="product">
+        <img src="product3.jpg" alt="三高调理版">
+        <h3>三高调理版（调节血压血糖）</h3>
+        <a href="product3.html">了解更多</a>
       </div>
     </div>
+  </section>
 
-    <div class="section" id="faq">
-      <h2>常见问题</h2>
-      <p><strong>Q: 适合什么人群？</strong><br />A: 适合成人、小孩、老人，特别是注重肠道健康的人。</p>
-      <p><strong>Q: 是否含糖？</strong><br />A: 使用甜叶菊代替蔗糖，糖尿病患者也能饮用。</p>
-    </div>
+  <section id="faq">
+    <h2>常见问题</h2>
+    <p>Q：适合什么人群？<br>A：适合成人、小孩、老人，特别是注重肠道健康的人群。</p>
+    <p>Q：是否含糖？<br>A：使用甜叶菊代替蔗糖，糖尿病患者也能饮用。</p>
+  </section>
 
-    <div class="section" id="contact">
-      <h2>联系我们</h2>
-      <p>
-        📍 地址：PureGrains 马来西亚总部<br />
-        📞 电话：+60 123-456 789<br />
-        📬 电邮：hello@puregrains.my<br />
-        📘 <a href="https://www.facebook.com/PureGrainsOfficial" target="_blank">Facebook</a>
-      </p>
-    </div>
-  </div>
+  <section id="contact">
+    <h2>联系我们</h2>
+    <p>📞 WhatsApp: <a href="https://wa.me/60123456789" target="_blank">点击联系</a><br>
+    📧 Email: info@puregrains.my</p>
+  </section>
+
+  <footer>
+    © 2025 PureLife Solution Sdn Bhd. All rights reserved.
+  </footer>
 </body>
 </html>
